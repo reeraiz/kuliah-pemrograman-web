@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+body {
+  margin: 0;
+  font-family: Asimovian, sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #222;
+  z-index: 1000;
+  padding: 10px 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+  text-shadow: 0 0 5px #fff;
+  transition: 1s color, 1s text-shadow;
+}
+
+header h1 a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00;
+}
+
+.profil-menu {
+  position: relative;
+}
+
+.profil-header {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s transform, 1s box-shadow;
+}
+
+.profil-header:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.7);
+}
+
+.profil-menu nav {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 1s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.profil-menu:hover nav {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.profil-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profil-menu nav ul li a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.profil-menu nav ul li a:hover {
+  color: #ffcc00;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #eee;
+  text-decoration: none;
+  transition: 1s color;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.gallery {
+  margin: 0;
+  padding: 20px;
+  column-count: 4;
+  column-gap: 1.2rem;
+}
+
+.gallery-item {
+  list-style: none;
+  margin: 0 0 1.2rem;
+  break-inside: avoid;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #222;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+@media (max-width: 900px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 1;
+  }
+}
