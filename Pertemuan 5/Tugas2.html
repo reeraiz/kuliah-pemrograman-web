@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tipe Data Dalam Array</title>
+</head>
+<body>
+  <script>
+    let a = [];
+    let jumlah = prompt("Mau input berapa data?");
+
+    for (let i = 0; i < jumlah; i++) {
+      a.push(prompt("Masukkan data ke-" + (i + 1)));
+    }
+
+    for (let i = 0; i < a.length; i++) {
+      document.write("Array a index ke-" + i + " adalah " + a[i] + "<br>");
+    }
+  </script>
+</body>
+</html>

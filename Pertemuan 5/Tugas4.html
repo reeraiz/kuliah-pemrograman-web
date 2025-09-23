@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hitungan Bangun Ruang</title>
+</head>
+<body>
+  <h3>Hitung Volume Bangun Ruang</h3>
+  <script>
+    let pilihan = prompt(
+      "Pilih bangun ruang:\n1. Kubus\n2. Balok\n3. Tabung"
+    );
+
+    if (pilihan == "1") {
+      let sisi = prompt("Masukkan panjang sisi kubus:");
+      let volumeKubus = sisi * sisi * sisi;
+      document.write("<b>Kubus</b><br>");
+      document.write("Sisi: " + sisi + "<br>");
+      document.write("Volume = " + volumeKubus);
+    } 
+    else if (pilihan == "2") {
+      let p = prompt("Masukkan panjang balok:");
+      let l = prompt("Masukkan lebar balok:");
+      let t = prompt("Masukkan tinggi balok:");
+      let volumeBalok = p * l * t;
+      document.write("<b>Balok</b><br>");
+      document.write("Panjang: " + p + "<br>");
+      document.write("Lebar: " + l + "<br>");
+      document.write("Tinggi: " + t + "<br>");
+      document.write("Volume = " + volumeBalok);
+    } 
+    else if (pilihan == "3") {
+      let r = prompt("Masukkan jari-jari tabung:");
+      let t = prompt("Masukkan tinggi tabung:");
+      let volumeTabung = 3.14 * r * r * t;
+      document.write("<b>Tabung</b><br>");
+      document.write("Jari-jari: " + r + "<br>");
+      document.write("Tinggi: " + t + "<br>");
+      document.write("Volume = " + volumeTabung);
+    } 
+    else {
+      document.write("Pilihan tidak tersedia!");
+    }
+  </script>
+</body>
+</html>
