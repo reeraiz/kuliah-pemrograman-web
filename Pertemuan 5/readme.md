@@ -326,19 +326,23 @@ Gambar Input:
 ![Tgs1.png](gambar/Tgs1.png)
 
 Gambar Output:
+
 ![Tgs1a.png](gambar/Tgs1a.png)
 
 ## Tugas 2. [`Tugas2.html`](Tugas2.html)
 Gambar Input:
+
 ![Tgs2.png](gambar/Tgs2.png)
 
 ![Tgs2b.png](gambar/Tgs2b.png)
 
 Gambar Output:
+
 ![Tgs2c.png](gambar/Tgs2c.png)
 
 ## Tugas 3. [`Tugas3.html`](Tugas3.html)
 Gambar:
+
 ![Tgs3a.png](gambar/Tgs3a.png)
 
 ![Tgs3b.png](gambar/Tgs3b.png)
@@ -349,8 +353,10 @@ Gambar:
 
 ## Tugas 4. [`Tugas4.html`](Tugas4.html)
 Gambar Input:
+
 ![Tgs4.png](gambar/Tgs4.png)
 Gambar Output:
+
 ![Tg4a.png](gambar/Tgs4a.png)
 
 ![Tg4b.png](gambar/Tgs4b.png)
